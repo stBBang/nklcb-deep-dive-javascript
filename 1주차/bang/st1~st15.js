@@ -27,6 +27,7 @@ console.log("6장"+(hex===octal));
 console.log("6장"+(2===2.00)); //숫자타입은 모두 실수로 처리
 console.log( 10 / 0 );  //무한 Infinity 반대 -Infinity 연산불가 NaN
 
+
 //심벌
 var set = Symbol("test");
 console.log(typeof set);
@@ -172,11 +173,13 @@ console.log(bbb);
 let abc = "333";
 //let abc = "444"; SyntaxError: Identifier 'abc' has already been declared
 
-if(true){
-    console.log(abc); //지역 변수에 let선언시 에러 호이스팅문제
-    //let abc = "222";
-}
 
-const bbc="3"; //const bbc; bbc="4"; 에러
+if(true){
+    //console.log(abc); //지역 변수에 let선언시 에러 호이스팅문제
+    let abc = "222";    
+}
+console.log(abc)
+
+//const bbc="3"; //const bbc; bbc="4"; 에러
 
  
