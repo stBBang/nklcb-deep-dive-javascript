@@ -194,9 +194,12 @@ class person25{
     //프로토타입 메서드
     sayHi(){
         console.log("hi my name is "+this.name);
-        //console.log("hi my name is ${this.name}); 이거안댐
+        //console.log('hi my name is ${this.name}'); //이거안댐
     }
 }
 const me25 =new person25("방형진","응편구");
 console.log("25장",me25);
 me25.sayHi();
+
+
+
